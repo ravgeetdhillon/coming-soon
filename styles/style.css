@@ -1,0 +1,150 @@
+/*
+	Basic Info
+
+	This is a free coming soon template made by Ravgeet Dhillon.
+	You can find more of his work here:
+	
+	https://github.com/ravgeetdhillon
+*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+.fader{
+	animation: fade 2s;
+	animation-iteration-count: 1;
+}
+body, html{
+	height: 100%;
+}
+body{
+	background: url("../images/back.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	visibility: hidden;
+}
+.header{
+	color: #f2f6f7;
+	text-align: center;
+	overflow: hidden;
+	padding: 16px;
+}
+.text{
+	float: left;
+	margin-left: 16px;
+	opacity: 0.7;
+}
+.date{
+	font-size: 0.6em;
+	margin-top: 6px;
+	display: block;
+	clear: both;
+	opacity: 0.7;
+}
+.links{
+	display: inline-block;
+	float: right;
+	margin-right: 16px;
+}
+.icon{
+	transition: all 0.1s;
+	padding: 0px 4px;
+	font-size: 0.8em;
+	opacity: 0.85;
+}
+.icon:hover{
+	opacity: 1;
+	/* font-size: 1em; */
+	transform: scale(1.5);
+}
+#facebook{
+	color: #3b5998;
+}
+#instagram{
+	color: #833ab4;
+}
+#youtube{
+	color: #ff0000;
+}
+#cess{
+	color: #e24747;
+}
+#heart{
+	color: red;
+	padding: 0px 1px;
+	animation: beat 1s infinite;
+}
+.mid-section{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.title{
+	font-size: 4em;
+	color: #f2f6f7;
+	letter-spacing: -1px;
+	line-height: 1em;
+	display: inline;
+	clear: all;
+
+}
+.clock{
+	overflow: hidden;
+	width: 250px;
+	margin: 8px auto;
+}
+.box{
+	padding: 0px 2px;
+}
+.clock-content{
+	background: rgba(21,21,21,0.8);
+	border-bottom: 1px solid rgba(242,246,247,0.5);
+	color: #f2f6f7;
+	text-align: center;
+	line-height: 20px;
+	padding: 12px 0px 4px;
+	overflow: hidden;
+}
+.clock-num{
+	font-size: 1.5em;
+	display: block;
+}
+.clock-text{
+	font-size: 0.7em;
+}
+.bar{
+	margin:auto;
+}
+.animate{
+	animation: clock 1s infinite;
+}
+.footer{
+	text-align: center;
+	font-size: 0.7em;
+	color: rgba(242,246,247,0.5);
+	position: fixed;
+	bottom: 2%;
+	width:100%;
+}
+@keyframes clock{
+	0%, 50%{
+		font-size: 1.5em;
+		opacity: 1;
+	}
+	100%{
+		font-size: 0em;
+		opacity: 0;
+	}
+}
+@keyframes fade{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
